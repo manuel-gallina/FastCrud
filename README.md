@@ -1,3 +1,3 @@
 # FastCrud
 
-Router FastAPI con operazioni CRUD standard, basato su modelli SQLModel.
+Base FastAPI router with CRUD operations, based on SQLModel entities.
