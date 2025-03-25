@@ -1,7 +1,3 @@
-# Dev container for Python
+# FastCrud
 
-## Dev environment set up
-To install the python environment and all the dependencies, run the following command:
-```bash
-uv sync
-```
+Router FastAPI con operazioni CRUD standard, basato su modelli SQLModel.
