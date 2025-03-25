@@ -1,0 +1,10 @@
+[project]
+name = "fast-crud"
+version = "0.1.0"
+description = "Base FastAPI router with CRUD operations, based on SQLModel entities"
+readme = "README.md"
+dependencies = [
+    "pydantic>=2.10.6",
+    "fastapi[standard]>=0.115.12",
+    "sqlmodel>=0.0.24"
+]

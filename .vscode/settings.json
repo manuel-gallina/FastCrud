@@ -1,0 +1,27 @@
+{
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.git": true,
+    "**/.venv": true,
+    "**/.cache": true,
+    "**/.ruff_cache": true,
+  },
+  "python.defaultInterpreterPath": "/workspace/.venv/bin/python",
+  "python.analysis.extraPaths": [
+    "/workspace/src",
+    "/workspace/tests"
+  ],
+  "editor.formatOnSave": true,
+  "ruff.interpreter": [
+    "/workspace/.venv/bin/python"
+  ],
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "strict",
+}
