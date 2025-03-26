@@ -1,0 +1,46 @@
+app_name: "api_server_v4"
+redis:
+  host: "redis"
+  port: 6379
+  db: 0
+logging:
+  root_level: "DEBUG"
+  format: "[%(asctime)s] [%(levelname)-8s] %(name)s > %(message)s @ %(pathname)s:%(lineno)d in %(funcName)s"
+  console:
+    enabled: true
+    formatter: "PLAIN"
+    root_level: "DEBUG"
+  file:
+    enabled: false
+    formatter: "PLAIN"
+    root_level: "DEBUG"
+    backup_count: 5
+    path: "logs"
+  module_levels:
+    main: "INFO"
+    sqlalchemy.engine: "INFO"
+    asyncio: "INFO"
+    apscheduler.scheduler: "WARNING"
+    apscheduler.executors.default: "INFO"
+datetime:
+  timezone: "Europe/Rome"
+databases:
+  MAIN:
+    drivername: "postgresql+psycopg"
+    username: "postgres"
+    password: "postgres"
+    host: "postgres"
+    port: 5432
+    database: "api"
+    query: { }
+    pool_size: 5
+auth:
+  jwt_algorithm: "HS512"
+  access_token:
+    secret: "61071191db82117c48de4b9006051d36c911e39574c0c168c47e5186185a3508"
+    lifetime_seconds: 3600
+    payload_key: "e088e821c48d25e3dfafdec9d30629fb004cbeab4ceb5d45f5fd846824aa3054"
+  refresh_token:
+    secret: "asdfafsadadfasdf"
+    lifetime_seconds: 86400
+    payload_key: "2d46b637016b195addf80414230286c4f5dad7b7f54965462e806218cea2bbcf"
