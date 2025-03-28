@@ -6,7 +6,7 @@ from starlette import status
 
 from app.api.schema.shared.base import BaseSchema
 from app.api.schema.shared.errors import ApiError
-from system.query_builder import (
+from system.query_builder_old import (
     Field,
     WhereRule,
     OrderByRule,

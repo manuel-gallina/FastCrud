@@ -1,7 +1,7 @@
 from app.api.schema.shared.base import CountMeta, BaseSchema
 from app.api.schema.shared.entities import BaseEntitySchema
 from app.core.models.main.user import User
-from system.query_builder import Field
+from system.query_builder_old import Field
 
 
 class UserSchema(BaseEntitySchema):
